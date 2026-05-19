@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #0d0d0f;
+  color: #ededef;
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+
+/* Allow text selection in inputs and content areas */
+input, textarea, [data-selectable] {
+  user-select: text;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #27272d; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #3a3a44; }
+
+/* Electron window drag */
+.drag-region { -webkit-app-region: drag; }
+.no-drag { -webkit-app-region: no-drag; }
+
+/* Focus ring */
+:focus-visible {
+  outline: 2px solid rgba(240, 165, 0, 0.6);
+  outline-offset: 2px;
+}

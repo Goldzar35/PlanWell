@@ -1,0 +1,66 @@
+/* Dark theme overrides for frappe-gantt 0.6.x — must come after frappe-gantt.css */
+
+.gantt-wrapper {
+  overflow-x: auto;
+  overflow-y: visible;
+  background: #141416;
+}
+
+.gantt-container svg {
+  display: block;
+}
+
+.gantt-container {
+  background: #141416 !important;
+}
+
+/* Grid */
+.gantt .grid-background { fill: #141416; }
+.gantt .grid-header    { fill: #1c1c20 !important; stroke: #27272d !important; }
+.gantt .grid-row       { fill: #141416 !important; }
+.gantt .grid-row:nth-child(even) { fill: #181820 !important; }
+.gantt .row-line       { stroke: #27272d !important; }
+
+/* Ticks */
+.gantt .tick           { stroke: #27272d !important; stroke-width: 0.5 !important; }
+.gantt .tick.thick     { stroke: #3a3a44 !important; stroke-width: 1 !important; }
+
+/* Today highlight */
+.gantt .today-highlight { fill: rgba(240, 165, 0, 0.08) !important; opacity: 1 !important; }
+
+/* Date labels */
+.gantt .upper-text { fill: #9898a6 !important; font-size: 11px !important; }
+.gantt .lower-text { fill: #64647a !important; font-size: 10px !important; }
+
+/* Bars — default (todo) = gold */
+.gantt .bar                             { fill: #f0a500 !important; stroke: none !important; }
+.gantt .bar-progress                    { fill: #f5bc42 !important; }
+.gantt .bar-wrapper:hover .bar          { fill: #f5bc42 !important; }
+.gantt .bar-wrapper:hover .bar-progress { fill: #ffd166 !important; }
+.gantt .bar-wrapper.active .bar         { fill: #f5bc42 !important; }
+.gantt .bar-wrapper.active .bar-progress { fill: #ffd166 !important; }
+
+/* Bar label */
+.gantt .bar-label          { fill: #0d0d0f !important; font-weight: 600 !important; }
+.gantt .bar-label.big      { fill: #ededef !important; }
+.gantt .bar-invalid ~ .bar-label { fill: #9898a6 !important; }
+
+/* Status-specific colors */
+.gantt .bar-wrapper.bar-status-done .bar              { fill: #22c55e !important; }
+.gantt .bar-wrapper.bar-status-done .bar-progress     { fill: #4ade80 !important; }
+.gantt .bar-wrapper.bar-status-in_progress .bar       { fill: #3b82f6 !important; }
+.gantt .bar-wrapper.bar-status-in_progress .bar-progress { fill: #60a5fa !important; }
+.gantt .bar-wrapper.bar-status-blocked .bar           { fill: #ef4444 !important; }
+.gantt .bar-wrapper.bar-status-blocked .bar-progress  { fill: #f87171 !important; }
+
+/* Handles */
+.gantt .handle { fill: rgba(255,255,255,0.15) !important; }
+
+/* Dependency arrows */
+.gantt .arrow { stroke: #5e5e6e !important; stroke-width: 1.4 !important; }
+
+/* Popup */
+.gantt-container .popup-wrapper          { background: #1c1c20 !important; border: 1px solid #27272d; border-radius: 8px; box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+.gantt-container .popup-wrapper .title   { color: #ededef; border-bottom-color: #f0a500; padding: 10px 14px 8px; }
+.gantt-container .popup-wrapper .subtitle { color: #9898a6; padding: 8px 14px 10px; }
+.gantt-container .popup-wrapper .pointer { display: none; }

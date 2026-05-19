@@ -1,0 +1,29 @@
+node_modules/
+out/
+dist/
+dist-electron/
+release/
+
+# Generated icons (rebuilt via npm run build:icon)
+resources/icon.icns
+resources/icon.png
+resources/icon.iconset/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local env
+.env
+.env.local
+
+# Editor
+.vscode/
+.idea/
+
+# Claude worktrees (internal tooling)
+.claude/worktrees/

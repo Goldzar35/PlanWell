@@ -1,0 +1,10 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- App icon background -->
+  <rect width="1024" height="1024" rx="230" fill="#141416"/>
+  <!-- Gantt bar 1: top, starts left, shorter -->
+  <rect x="140" y="248" width="420" height="156" rx="78" fill="#f0a500"/>
+  <!-- Gantt bar 2: middle, starts further right, longest -->
+  <rect x="260" y="434" width="624" height="156" rx="78" fill="#f0a500"/>
+  <!-- Gantt bar 3: bottom, starts even further right, medium -->
+  <rect x="400" y="620" width="484" height="156" rx="78" fill="#f0a500" opacity="0.6"/>
+</svg>
