@@ -76,6 +76,7 @@ function createWindow(): void {
 }
 
 app.whenReady().then(() => {
+  app.setName('PlanWell')
   electronApp.setAppUserModelId('com.planwell')
 
   app.on('browser-window-created', (_, window) => {

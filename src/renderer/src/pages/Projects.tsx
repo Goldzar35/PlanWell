@@ -63,7 +63,7 @@ export default function Projects() {
   })
 
   return (
-    <div className="p-6 max-w-5xl animate-slide-in">
+    <div className="p-6 animate-slide-in">
       {/* Toolbar */}
       <div className="flex items-center justify-between mb-6">
         <div className="flex items-center gap-1">

@@ -257,7 +257,7 @@ export default function Dashboard() {
   const isEmpty = projects.length === 0
 
   return (
-    <div className="p-6 max-w-5xl space-y-6 animate-slide-in">
+    <div className="p-6 space-y-6 animate-slide-in">
       {/* Stat strip */}
       <div className="grid grid-cols-4 gap-3">
         {statCards.map(({ label, value, icon: Icon, color, bg }) => (

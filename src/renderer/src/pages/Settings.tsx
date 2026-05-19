@@ -13,7 +13,7 @@ export default function Settings() {
   }
 
   return (
-    <div className="p-6 max-w-2xl animate-slide-in space-y-6">
+    <div className="p-6 animate-slide-in space-y-6">
       {/* AI / API Key */}
       <section className="bg-app-surface border border-app-border rounded-xl overflow-hidden">
         <div className="px-5 py-4 border-b border-app-border-subtle">
